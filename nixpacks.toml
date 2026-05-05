@@ -1,0 +1,4 @@
+[phases.build] 
+cmds = ["mvn package -DskipTests"] 
+[start] 
+cmd = "java -jar target/FormBuilderApp-1.0.war" 
