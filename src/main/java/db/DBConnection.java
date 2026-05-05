@@ -10,7 +10,8 @@ public class DBConnection {
     
     public static Connection getConnection() {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("DB_URL = " + System.getenv("DB_URL"));
+Class.forName("com.mysql.cj.jdbc.Driver");
             Connection con = DriverManager.getConnection(URL, USER, PASSWORD);
             if (con != null) {
                 System.out.println("✅ Database connected successfully");
